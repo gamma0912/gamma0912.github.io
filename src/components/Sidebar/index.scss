@@ -1,6 +1,6 @@
 .nav-bar {
     background: #181818;
-    width: 60px;
+    width: 70px;
     height: 100%;
     position: absolute;
     top: 0;
@@ -56,9 +56,10 @@
                     opacity: 1;
                 }
             }
-
+            
             &:after {
                 content: '';
+                //TODO: change here to change icon hover text
                 font-size: 9px;
                 letter-spacing: 2px;
                 position: absolute;
@@ -94,6 +95,30 @@
         a.active {
             svg {
                 color: #ffd700;
+            }
+        }
+    }
+    //TODO: change size of linkedin, github, etc
+    ul {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        display: block;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        margin: 0;
+
+        li {
+            a {
+                padding: 7px 0;
+                display: block;
+                font-size: 18px;
+                line-height: 16px;
+
+                &:hover svg {
+                    color: #ffd700;
+                }
             }
         }
     }
