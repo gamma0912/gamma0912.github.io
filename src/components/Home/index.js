@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import LogoTitle from "../../assets/images/logo-s.png";
 import AnimatedLetters from "../AnimatedLetters";
@@ -10,6 +10,12 @@ const Home = () => {
     const imaArray = "I'm a".split("")
     const nameArray = "ussy".split("")
     const jobArray = "comp sci student.".split("")
+    
+    useEffect(() => {
+        return setTimeout(() => {
+            setLetterClass('text-animate-hover')
+        }, 4000)
+    }, [])
     //use the idx values to adjust appearance delay in milliseconds
     return (
         <div className = "container home-page">
