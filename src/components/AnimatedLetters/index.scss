@@ -1,0 +1,15 @@
+.text-animate {
+    display: inline-block;
+    opacity: 0;
+    animation: bounceIn 1s 1s;
+    animation-fill-mode: forwards;
+    min-width: 10px;
+}
+
+
+
+@for $i from 1 through 100 { //TODO: total num of chars in the home page message
+    .text-animate._#{$i} {
+        animation-delay: #{$i / 15}s;
+    }
+}
