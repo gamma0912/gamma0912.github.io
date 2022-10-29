@@ -12,7 +12,7 @@ const Home = () => {
     const jobArray = "comp sci student.".split("")
     
     useEffect(() => {
-        return setTimeout(() => {
+        setTimeout(() => {
             setLetterClass('text-animate-hover')
         }, 4000)
     }, [])
