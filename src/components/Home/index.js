@@ -1,14 +1,12 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import LogoTitle from "../../assets/images/logo-s.png";
 import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss"
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const greetingArray = "Hi,".split("")
-    const imaArray = "I'm a".split("")
-    const nameArray = "ussy".split("")
+    const nameArray = "I'm Gamma,".split("")
     const jobArray = "comp sci student.".split("")
     
     useEffect(() => {
@@ -26,16 +24,12 @@ const Home = () => {
                 idx = {12}/> 
                 <br />
                 <AnimatedLetters letterClass = {letterClass}
-                strArray = {imaArray}
-                idx = {15}/>
-                <img src = {LogoTitle} alt = "developer" />
-                <AnimatedLetters letterClass = {letterClass}
                 strArray = {nameArray}
                 idx = {22}/>
                 <br />
                 <AnimatedLetters letterClass = {letterClass}
                 strArray = {jobArray}
-                idx = {26}/>
+                idx = {34}/>
                 </h1>
                 <h2>
                 Looking for software internships!
